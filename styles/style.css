@@ -2,80 +2,188 @@
 @import url('https://fonts.cdnfonts.com/css/miama');
 
 /* font-family: 'Miama', sans-serif; */
-                                                
 
-.inter{
+
+.inter {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400px;
     font-style: normal;
 }
 
-/* Header Section Style */
-
-/* Nav-Bar Style */
-.nav-bar{
-    display: flex;
-    background-color: black;
-    align-items: center;
-    justify-content: space-between;
-
+.body {
+    /* background-color: black; */
 }
 
-.nav-title{
-    color: rgb(230, 83, 60);
-    font-family: Inter;
-    font-size: 2.2rem;
-    font-weight: 800;
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+/* Habit Section */
+
+.habit {
+    background-color: salmon;
+    padding: 0 50px 100px 50px;
+}
+
+.habit-content {
+    align-items: center;
+}
+
+.title {
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-weight: 900;
     line-height: 120%;
     letter-spacing: 0%;
-    margin-left: 190px;
+    margin-bottom: 5px;
+    text-align: center;
 }
 
-.nav-links{
+.description {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    text-align: center;
+}
+
+.habit-pic-contain {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+.pic-div {
+    /* Frame 22 */
+    position: static;
+    width: 231px;
+    height: 274px;
+
+    /* Inside Auto Layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 40px;
+}
+
+.habit-image {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.habit-title {
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.habit-description {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: .9rem;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.3px;
+    text-align: center;
+}
+
+
+/* Run Section Style */
+
+.run {
     display: flex;
-    gap: 4rem;
-    margin-right: 190px;
+    justify-content: center;
+    gap: 170px;
+    background-color: salmon;
+    padding: 30px;
+    margin-top: 100px;
+    display: flex;
 }
 
-.nav-item{
-    list-style: none;
+.run-content {
+    width: 443px;
+    height: 290px;
 }
 
-.nav-item a{
-    text-decoration: none;
-    color: rgb(252, 252, 252);
+.run-title {
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.run-description {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    text-align: left;
+}
+
+.run-btn {
+    width: 224px;
+    height: 54px;
+    border-radius: 42px;
+    background: rgb(230, 83, 60);
+    border: none;
+
+    color: rgb(255, 255, 255);
     font-family: Inter;
     font-size: 1.2rem;
-    font-weight: 400;
-    line-height: 120%;
-    letter-spacing: 0%;
-}
-
-.nav-home{
-    background-color: red;
-    width: 92px;
-    height: 38px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0px;
     text-align: center;
-    flex: none;
-    border-radius: 20px;
+}
+
+.run-image-div {
+    /* Below code for Zoom */
+    display: inline-grid;
+    overflow: hidden;
+    border-radius: 18px;
+}
+
+.run-image-div img{
+    width: 366px;
+    height: 312px;
+    /* Below code for zoom */
+    transform: scale(2.5);
+    transform-origin: 75% 30%;
 }
 
 
 
 
+/* Responsive for Small Device */
 
 
+@media screen and (max-width: 576px) {
 
 
+    /* Habit Section */
+    .habit-pic-contain {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 80px;
+    }
+
+    /* Run Section */
+    .run{
+        flex-direction: column;
+        gap: 40px;
+    }
 
 
-
-
-
-
-
-
-
-
-
+}
