@@ -164,6 +164,25 @@ main {
     transform-origin: 75% 30%;
 }
 
+/* BMI TEXT */
+.bmi-text-parent {
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.bmi-text {
+    background-color: salmon;
+}
+
+.text-description {
+    text-align: left;
+}
+
+.text-title {
+    text-align: left;
+}
+
 /* BMI Section Style */
 
 .bmi-parent {
@@ -214,18 +233,72 @@ th {
 
 .form-div {
     width: 577px;
-    height: 386px;
+    height: 440px;
 }
 
 .bmi-description {
     color: rgba(255, 255, 255, 0.5);
-    font-family: Inter;
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.3px;
     text-align: left;
 }
+
+.form-input-text{
+    width: 40%;
+    height: 35px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+
+
+}
+
+.form-select1 {
+    width: 47%;
+    height: 55px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: rgba(108, 92, 92, 0.975);
+}
+
+.form-select2 {
+    width: 96%;
+    height: 55px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    margin: 8px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: rgba(108, 92, 92, 0.975);
+}
+
+.btn-form {
+    width: 224px;
+    height: 54px;
+    padding: 16px 40px 16px 40px;
+    border-radius: 42px;
+    background: rgb(230, 83, 60);
+    margin-top: 18px;
+    border: none;
+
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+
 
 /* Team Section Style */
 
@@ -448,7 +521,7 @@ footer {
     }
 
     .team {
-        padding: 20px 20px 20px 20px;
+        padding-right: 50px;
         margin-top: 100px;
     }
 
